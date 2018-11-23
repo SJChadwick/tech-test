@@ -11,7 +11,7 @@
     <div class="basket-summary__breakdown-content basket-summary__breakdown-content--visible js-basket-breakdown-content">
         <p class="basket-summary__breakdown-subtitle">Included in your holiday</p>
 
-        <ul>
+        <ul class="basket-summary__list">
             <li>
                 <?php svg('plane2', 12, 12, 'basket-summary__list-icon', ''); ?>
                 Return flights <a href="#" class="js-trigger-modal" data-modal-id="flight-information">Leeds Bradford Airport</a>
@@ -44,7 +44,7 @@
 
         <p class="basket-summary__breakdown-subtitle">Extra benefits and special offers</p>
 
-        <ul>
+        <ul class="basket-summary__list">
             <li>
                 <?php svg('smile', 12, 12, 'basket-summary__list-icon', ''); ?>
                 (1) Free Child place
@@ -67,7 +67,7 @@
 
             <p class="basket-summary__breakdown-subtitle">Holiday Essentials</p>
 
-            <ul>
+            <ul class="basket-summary__list">
                 <li>
                     <?php svg('tick', 12, 12, 'basket-summary__list-icon', ''); ?>
                     Hotel extras

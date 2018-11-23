@@ -21,6 +21,8 @@ function setDivHeight() {
 
 setDivHeight();
 
+$(window).resize(setDivHeight());
+
 triggerBreakdown.on('click', () => {
     contentBreakdown.toggle();
     setDivHeight();

@@ -104,6 +104,26 @@
             @include font-weight-semibold();
         }
 
+        &__list {
+            list-style: none;
+            border-bottom: 1px dashed $pale-grey;
+            &:last-child {
+                border-bottom: none;
+            }
+            @include media('>=tablet') {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            li {
+                margin-bottom: 10px;
+                @include media('>=tablet') {
+                    width: 33%;
+                    box-sizing: border-box;
+                    padding-right: 5px;
+                }
+            }
+        }
+
         &__breakdown-details {
             margin-bottom: $half-unit;
         }
@@ -170,10 +190,6 @@
             }
         }
 
-        &__price-item {
-
-        }
-
         &__price-value {
             font-weight: 600;
 
@@ -225,26 +241,5 @@
 
     &__supplement-text {
         text-align: center;
-    }
-}
-
-ul {
-    list-style: none;
-    border-bottom: 1px dashed $pale-grey;
-    &:last-child {
-        border-bottom: none;
-    }
-    @include media('>=tablet') {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
-li {
-    margin-bottom: 10px;
-    @include media('>=tablet') {
-        width: 33%;
-        box-sizing: border-box;
-        padding-right: 5px;
     }
 }
