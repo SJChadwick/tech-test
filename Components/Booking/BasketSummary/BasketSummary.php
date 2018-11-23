@@ -95,7 +95,7 @@
                     <?php svg('zero-card-fee', 30, 200, 'basket-summary__ksp-svg', '');?>
                 </div>
 
-                <div class="basket-summary__totals-block basket-summary__breakdown-content basket-summary__breakdown-content--visible js-basket-breakdown-content">
+                <div class="basket-summary__totals-block">
 
                     <div class="basket-summary__price-row">
                         <div class="basket-summary__price-item">Base price</div>
@@ -115,7 +115,7 @@
                             <div class="basket-summary__price-value">£232</div>
                         </div>
 
-                        <div class="basket-summary__essentials">
+                        <div class="basket-summary__essentials basket-summary__essentials-content basket-summary__essentials-content--visible js-basket-essentials-content">
                             <div class="basket-summary__price-row">
                                 <div class="basket-summary__price-item">Additional luggage</div>
                                 <div class="basket-summary__price-value">£92.00</div>
