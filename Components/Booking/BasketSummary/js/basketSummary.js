@@ -4,13 +4,11 @@ const triggerBreakdown = $('.js-basket-desktop-trigger');
 const contentBreakdown = $('.js-basket-breakdown-content');
 const triggerEssential = $('.js-basket-essentials-trigger');
 const contentEssential = $('.js-basket-essentials-content');
-let basketBreakdownContainer = '';
-let basketTotalContainer = '';
 
 function setDivHeight() {
     if ($(window).width() > 767) {
-        basketBreakdownContainer = $('.basket-summary__breakdown');
-        basketTotalContainer = $('.basket-summary__totals');
+        const basketBreakdownContainer = $('.basket-summary__breakdown');
+        const basketTotalContainer = $('.basket-summary__totals');
         if (basketBreakdownContainer.height() > basketTotalContainer.height()) {
             basketTotalContainer.height(basketBreakdownContainer.height());
         } else {
@@ -20,8 +18,6 @@ function setDivHeight() {
 }
 
 setDivHeight();
-
-$(window).resize(setDivHeight());
 
 triggerBreakdown.on('click', () => {
     contentBreakdown.toggle();
