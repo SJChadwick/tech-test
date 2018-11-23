@@ -19,7 +19,11 @@
         @include media('>=tablet') {
             padding-left: 10px;
             padding-right: 10px;
+            height:100vh;
+            width: 100vw;
         }
+        background-color: $color-primary;
+
     }
 
     &__breakdown,

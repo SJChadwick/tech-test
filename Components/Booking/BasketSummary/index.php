@@ -1,7 +1,10 @@
 <?php include(__DIR__ . '/../../../include/header.php'); ?>
 
-<div style="background-color: #3272AD;">
-    <?php include(__DIR__ . '/BasketSummary.php'); ?>
+<div class="basket-summary__container">
+    <div class="js-basket-container wrapper">
+        <?php include(__DIR__ . '/BasketSummary.php'); ?>
+        <?php include(__DIR__ . '/BasketTotal.php'); ?>
+    </div>
 </div>
 
 <?php include(__DIR__ . '/../../../include/footer.php'); ?>
